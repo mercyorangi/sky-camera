@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- android:icon="@drawable/ic_menu_preferences"  -->
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_preferences" 
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/action_settings"/>
+    
+    <item
+        android:id="@+id/exposure"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_exposure" />
+    
+    
+    <item 
+        android:id="@+id/about"
+        android:title="@string/action_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    
+      <item 
+        android:id="@+id/guide"
+        android:title="@string/action_guide"
+        android:icon="@android:drawable/ic_menu_directions"
+        android:orderInCategory="100"
+        android:showAsAction="always"/>
+
+</menu>

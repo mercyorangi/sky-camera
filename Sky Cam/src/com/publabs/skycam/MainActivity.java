@@ -541,8 +541,8 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	
    public class SendEmailAsyncTask extends AsyncTask<PicData, Void, String> {
 		
-//		Mail m = new Mail("gsocpublabs@gmail.com", "publabs1234"); my email mj
-	   Mail m = new Mail("mercyorangi@gmail.com", "iquest22!");
+
+	   Mail m = new Mail("publabsgsoc@gmail.com", "publiclabs2014!");
 				
 		    
 		    @Override

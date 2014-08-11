@@ -7,12 +7,12 @@ import android.os.Environment;
 import android.media.ExifInterface;
 import java.util.Date;
 
-<<<<<<< HEAD
-public class SaveExif extends AsyncTask<PicData, Void, String> {  
-	//pushed... new workspace plus outer folder removed..
-=======
+//<<<<<<< HEAD
+//public class SaveExif extends AsyncTask<PicData, Void, String> {  
+//	//pushed... new workspace plus outer folder removed..
+//=======
 public class SaveExif extends AsyncTask<PicData, Void, String> {    
->>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
+//>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
     	
 	protected String doInBackground(PicData... params)
 	{

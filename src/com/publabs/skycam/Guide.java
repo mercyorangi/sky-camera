@@ -21,10 +21,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class Guide extends ActionBarActivity implements ActionBar.TabListener {
-<<<<<<< HEAD
-	//pushed... new workspace plus outer folder removed..
-=======
->>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
+//<<<<<<< HEAD
+//	//pushed... new workspace plus outer folder removed..
+//=======
+//>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide

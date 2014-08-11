@@ -13,11 +13,11 @@ import java.io.OutputStream;
 
 public class SavePic extends AsyncTask<PicData, Void, String> {
 	
-<<<<<<< HEAD
-	//pushed... new workspace plus outer folder removed..
-	
-=======
->>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
+//<<<<<<< HEAD
+//	//pushed... new workspace plus outer folder removed..
+//	
+//=======
+//>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
 	protected String doInBackground(PicData... params)
 	{
 		if(params != null && params.length > 0)

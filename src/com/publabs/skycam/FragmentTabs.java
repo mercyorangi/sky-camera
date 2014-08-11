@@ -11,10 +11,10 @@ import android.widget.TextView;
  * A placeholder fragment containing a simple view.
  */
 public class FragmentTabs extends Fragment {
-<<<<<<< HEAD
-	
-=======
->>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
+//<<<<<<< HEAD
+//	
+//=======
+//>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
 	/**
 	 * The fragment argument representing the section number for this
 	 * fragment.

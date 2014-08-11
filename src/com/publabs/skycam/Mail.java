@@ -19,11 +19,11 @@ import javax.mail.internet.MimeMultipart;
 
 
 public class Mail extends javax.mail.Authenticator { 
-<<<<<<< HEAD
-	
-	//pushed... new workspace plus outer folder removed..
-=======
->>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
+//<<<<<<< HEAD
+//	
+//	//pushed... new workspace plus outer folder removed..
+//=======
+//>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
   private String _user; 
   private String _pass; 
 

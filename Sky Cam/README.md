@@ -1,9 +1,9 @@
 Sky Cam
 =======
 
-Mohit's Android Aerial Acquisition APP
+Enhancements to the SkyCam project by Public Labs
 
-This is an android application for GSoC 2013.
+This is an android application for GSoC 2014.
 
 For using this application:
 
@@ -16,3 +16,6 @@ For using this application:
 4.) For email updates, type in your mail id.
 
 
+Prerequisite
+=======
+Android phone, running version 3.0 and above

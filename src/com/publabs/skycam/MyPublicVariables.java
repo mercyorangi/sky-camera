@@ -2,8 +2,11 @@ package com.publabs.skycam;
 
 public class MyPublicVariables {
 	
+<<<<<<< HEAD
 	//pushed... new workspace plus outer folder removed..
 	
+=======
+>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
 	public static String header_photo_acquisition_mission = "Starting and Ending a Photo Acqusition Mission";
 	public static String photo_acquisition_mission = "1. Buy a kite or a balloon or a drone - provides low cost, easy to use and safe methods for capturing aerial images \n\n" +
 													 "2. Attach an Android phone, having the SkyCam Application, to the kite/balloon/drone as opposed to needing airplanes and/or satellites.\n\n" +

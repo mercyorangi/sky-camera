@@ -95,7 +95,10 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		setContentView(R.layout.activity_main);
 		

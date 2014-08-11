@@ -95,7 +95,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		//pushed... new workspace plus outer folder removed.. again
 		
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		setContentView(R.layout.activity_main);

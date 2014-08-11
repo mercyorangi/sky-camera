@@ -15,7 +15,6 @@ import android.provider.Settings;
 
 
 public class GPSTracker extends Service implements LocationListener {
-	//pushed... new workspace plus outer folder removed..
 
 	private final Context mContext;
 	

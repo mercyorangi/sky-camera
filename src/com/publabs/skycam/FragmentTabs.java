@@ -12,7 +12,6 @@ import android.widget.TextView;
  */
 public class FragmentTabs extends Fragment {
 	
-	//pushed... new workspace plus outer folder removed..
 	/**
 	 * The fragment argument representing the section number for this
 	 * fragment.

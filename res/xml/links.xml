@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory
+	   android:summary="Links for Acquiring and Processing Aerial Photos"
+	   android:title="Links for Acquiring and Processing Aerial Photos" >
+	   
+	     <Preference android:title="@string/prefs_learnweb_page" >
+    		<intent android:action="android.intent.action.VIEW"
+            	android:data="http://publiclab.org/wiki/balloon-mapping" />
+ 		</Preference>
+	   
+		 <Preference android:title="@string/links_tab_make_a_map" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="http://mapknitter.org" />
+		  </Preference>
+		  
+		 <Preference android:title="@string/links_tab_mapping_regulations" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="http://publiclab.org/wiki/balloon-mapping-regulations" />
+		 </Preference>
+		
+		 <Preference android:title="@string/links_tab_share_your_experience" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="http://publiclab.org/post" />
+		 </Preference>
+		 
+		  <Preference android:title="@string/links_tab_share_your_expertise_cartography_collection" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="http://publiclab.org/wiki/public-lab-cartography-collective" />
+		 </Preference>
+		 
+		   <Preference android:title="@string/prefs_opensourceweb_page" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="https://github.com/mercyorangi/sky-camera" />
+		 </Preference>
+	 
+	</PreferenceCategory>
+	
+</PreferenceScreen>

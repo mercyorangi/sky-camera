@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.LinkedList;
@@ -138,10 +139,10 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		new AlertDialog.Builder(this)
 		  .setTitle("About")
 		  .setMessage("This app by Public Lab, will take periodic photographs, and is intended to " +
-		  		"operate a cheap Android phone while attached to a balloon or kite, for aerial " +
-		  		"photography. It emails small previews of photos and the latitude and longitude " +
+		  		"operate a cheap Android phone while attached to a balloon, a drone or a kite, for aerial " +
+		  		"photography. It emails the photos and the latitude and longitude " +
 		  		"to the given email address, while in flight. " +
-	  		"Be sure to share your work with the rest of the Public Lab community at PublicLab.org!")
+	  		"Be sure to share your work with the rest of the Public Lab community at PublicLab.org! \nSee 'Guide' in menu for details.")
 		  .setNeutralButton("OK", new DialogInterface.OnClickListener(){
 			  
 			  @Override
@@ -560,16 +561,25 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 					String fileName = picData.getName();
 					String savefile = sdPath + fileName;
 		    	    String sendemail =picData.getemail();
+		    	    
+		    	    Calendar c = Calendar.getInstance();
+		    	    String the_year = String.valueOf(c.get(Calendar.YEAR));
+		    	    String the_month = String.valueOf((c.get(Calendar.MONTH))+1);
+		    	    String the_day = String.valueOf(c.get(Calendar.DAY_OF_MONTH));
+		    	    
+		    	    String the_full_date = the_day + "-" + the_month + "-" + the_year;
 		    	
 		    	String[] toArr = {""+sendemail}; 
 		        m.setTo(toArr); 
-//		        m.setFrom("gsocpublabs@gmail.com"); 
-		        m.setFrom("mercyorangi@gmail.com"); 
-//		        m.setSubject("GSoC 2013 Email");
-		        m.setSubject("Mercy's Email"); 
-		        m.setBody("Latitude: " + picData.getlats() + " Longitude " + picData.getlons() );	
-		    	
-
+		        m.setFrom("publabsgsoc@gmail.com"); 
+		        m.setSubject("Photo from Sky Camera " + "[" + the_full_date + "]"); 
+		        m.setBody("Hello, \nThis photo was taken at the latitude and longitude stated below: " +
+		        				"\n\nLatitude: " + picData.getlats() + 
+		        				"\nLongitude: " + picData.getlons() +
+		        				"\n\nThank you for using Sky Camera :-) ... " +
+		        				"\nYou can now upload your photos to http://mapknitter.org to turn your photos into a map." +
+		        				"\nBe sure to share your work with the rest of the Public Lab community at http://publiclab.org/post ");	
+		      	    	
 		        try { 
 		           
 		        	m.addAttachment(""+sdPath1); 
@@ -639,7 +649,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 			timeUpdateHandler.removeCallbacks(timeUpdateTask);
 			new AlertDialog.Builder(this)
 			  .setTitle("Make a map")
-			  .setMessage("Now you can upload your photos (stored in the SD card in the Sky Cam folder) to MapKnitter.org to turn your photos into a map.  Be sure to share your work with the rest of the Public Lab community at PublicLab.org!")
+			  .setMessage("Your photos have been saved in your SD card in the folder 'SkyCamFolder'\n\nNow you can upload your photos to MapKnitter.org to turn your photos into a map (see 'Guide' on the menu).\n\nBe sure to share your work with the rest of the Public Lab community at PublicLab.org!(see 'Guide' on the menu)")
 			  .setNeutralButton("OK", new DialogInterface.OnClickListener(){
 				  
 				  @Override

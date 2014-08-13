@@ -49,28 +49,28 @@ public class PicData
 	public String getlats()
 	{   
 	    StringBuilder b = new StringBuilder();
-	    b.append((int) lat);
-	    b.append("/1,");
-	    lat = (lat - (int) lat) * 60;
-	    b.append((int) lat);
-	    b.append("/1,");
-	    lat = (lat - (int) lat) * 60000;
-	    b.append((int) lat);
-	    b.append("/1000");
+	    b.append((double) lat);
+//	    b.append("/1,");
+//	    lat = (lat - (int) lat) * 60;
+//	    b.append((int) lat);
+//	    b.append("/1,");
+//	    lat = (lat - (int) lat) * 60000;
+//	    b.append((int) lat);
+//	    b.append("/1000");
 	    return b.toString();
 	}
 	
 	public String getlons()
 	{
 		StringBuilder b = new StringBuilder();
-	    b.append((int) lon);
-	    b.append("/1,");
-	    lon = (lon - (int) lon) * 60;
-	    b.append((int) lon);
-	    b.append("/1,");
-	    lon = (lon - (int) lon) * 60000;
-	    b.append((int) lon);
-	    b.append("/1000");
+	    b.append((double) lon);
+//	    b.append("/1,");
+//	    lon = (lon - (int) lon) * 60;
+//	    b.append((int) lon);
+//	    b.append("/1,");
+//	    lon = (lon - (int) lon) * 60000;
+//	    b.append((int) lon);
+//	    b.append("/1000");
 	    return b.toString();
 	}
 	

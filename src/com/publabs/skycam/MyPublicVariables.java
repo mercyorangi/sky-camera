@@ -27,7 +27,7 @@ public class MyPublicVariables {
 	public static String app_settings_detailed = "1. Time period - this is the time interval the camera will take to capture successive photographs \n\n " +
 											 "2. Email ID - the email address where the photos taken (and metadata i.e. latitude and longitude) will be emailed to \n\n " +
 											 "3. Exposure Value - ensures that the subject of the photo is at the center of the light scale (optional) \n\n " +
-											 "4. Threshold Value - this makes it possible to highlight objects in an image through the seperation of light and dark regions \n";
+											 "4. Threshold Value - this makes it possible to highlight objects in an image through the separation of light and dark regions \n";
 	
 	
 	public static String [] headers_guide_page_data = new String[]{header_photo_acquisition_mission,header_processing_aerial_photos,header_app_settings_detailed};

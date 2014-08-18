@@ -7,20 +7,12 @@ import android.os.Environment;
 import android.media.ExifInterface;
 import java.util.Date;
 
-<<<<<<< HEAD
 //<<<<<<< HEAD
 //public class SaveExif extends AsyncTask<PicData, Void, String> {  
 //	//pushed... new workspace plus outer folder removed..
 //=======
 public class SaveExif extends AsyncTask<PicData, Void, String> {    
 //>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
-=======
-
-
-
-public class SaveExif extends AsyncTask<PicData, Void, String> {
-    
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
     	
 	protected String doInBackground(PicData... params)
 	{
@@ -42,13 +34,8 @@ public class SaveExif extends AsyncTask<PicData, Void, String> {
 		        } else {
 		            exif.setAttribute(ExifInterface.TAG_GPS_LATITUDE_REF, "N");
 		        }
-<<<<<<< HEAD
 		    	
 		    	exif.setAttribute(ExifInterface.TAG_GPS_LATITUDE, picData.getlats());
-=======
-		    	exif.setAttribute(ExifInterface.TAG_GPS_LATITUDE,
-		        		picData.getlats());
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 
 		        double lon = picData.getlon()/1000000.0;
 		        if (lon < 0) {
@@ -57,13 +44,8 @@ public class SaveExif extends AsyncTask<PicData, Void, String> {
 		        } else {
 		            exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF, "E");
 		        }
-<<<<<<< HEAD
 		        
 		        exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE, picData.getlons());
-=======
-		        exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE,
-		        		picData.getlons());
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 			    
 		        exif.saveAttributes();
 		        exif.setAttribute(ExifInterface.TAG_DATETIME, (new Date(System.currentTimeMillis())).toString());    

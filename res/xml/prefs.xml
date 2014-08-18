@@ -5,34 +5,20 @@
    android:title="Time Period" >
   <EditTextPreference
      android:key="time"
-<<<<<<< HEAD
      android:defaultValue="7"
      android:summary="it should be greater than 7s(s for second)"
      android:title="Time Period (in seconds)" />
-=======
-     android:defaultValue="7s"
-     android:summary="it should be greater than 7s(s for second)"
-     android:title="Time Period" />
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
   
   <EditTextPreference
      android:key="thres"
      android:defaultValue="2.0"
      android:summary="Enter threshold value"
-<<<<<<< HEAD
      android:title="Threshold Value (see 'Guide' in menu)" />
-=======
-     android:title="Threshold Value" />
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
   
   
   <EditTextPreference
      android:key="mail"
-<<<<<<< HEAD
      android:defaultValue="emailAddress@example.com"
-=======
-     android:defaultValue="mohitmeena.216@gmail.com"
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
      android:summary="Enter your email-id"
      android:title="E-Mail ID" />
  </PreferenceCategory>
@@ -45,22 +31,11 @@
             android:data="http://mapknitter.org" />
   </Preference>
   
-<<<<<<< HEAD
 
 
  <Preference android:title="@string/prefs_opensourceweb_page" >
     <intent android:action="android.intent.action.VIEW"
              android:data="https://github.com/mercyorangi/sky-camera" />
-=======
- <Preference android:title="@string/prefs_learnweb_page" >
-    <intent android:action="android.intent.action.VIEW"
-            android:data="http://publiclab.org/wiki/balloon-mapping" />
- </Preference>
-
- <Preference android:title="@string/prefs_opensourceweb_page" >
-    <intent android:action="android.intent.action.VIEW"
-            android:data="https://github.com/mohit216/Sky-Cam" />
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
  </Preference>
  
   </PreferenceCategory>

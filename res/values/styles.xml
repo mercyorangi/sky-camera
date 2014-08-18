@@ -27,7 +27,6 @@
     <style name="MyActionBar" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/action_bar_background_new1</item>
     </style>
-<<<<<<< HEAD
     
     <!-- BEGIN :: AppTheme for Action Bar -->
    	   	<style name="AppTheme2" parent="@style/Theme.AppCompat.Light.DarkActionBar">
@@ -40,7 +39,4 @@
 	    </style>
 	    
     <!-- END :: AppTheme for Action Bar -->
-=======
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
-
 </resources>

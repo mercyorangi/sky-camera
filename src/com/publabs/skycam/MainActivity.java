@@ -2,15 +2,10 @@ package com.publabs.skycam;
 
 import java.io.File;
 import java.io.IOException;
-<<<<<<< HEAD
 import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-=======
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 import java.util.Collections;
 import java.util.Date;
 import java.util.LinkedList;
@@ -40,10 +35,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
-<<<<<<< HEAD
 import android.view.ViewConfiguration;
-=======
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -104,7 +96,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-<<<<<<< HEAD
 //<<<<<<< HEAD
 //		
 //=======
@@ -115,11 +106,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		//force show the overflow menu, otherwise menu will be attached to hardware menu button
 		forceShowOverFlowMenu();
 		
-=======
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		setContentView(R.layout.activity_main);
-		
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		camView = (SurfaceView) this.findViewById(R.id.CameraView); //SurfaceView allows you to control the surface size and format, edit the pixels in the surface, and monitor changes to the surface
 		surfaceHolder = camView.getHolder();
 		surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
@@ -152,16 +138,11 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		
 		new AlertDialog.Builder(this)
 		  .setTitle("About")
-<<<<<<< HEAD
 		  .setMessage("This app by Public Lab, will take periodic photographs, and is intended to " +
 		  		"operate a cheap Android phone while attached to a balloon, a drone or a kite, for aerial " +
 		  		"photography. It emails the photos and the latitude and longitude " +
 		  		"to the given email address, while in flight. " +
 	  		"Be sure to share your work with the rest of the Public Lab community at PublicLab.org! \nSee 'Guide' in menu for details.")
-=======
-		  .setMessage("This app by Public Lab, will take periodic photographs, and is intended to operate a cheap Android phone while attached to a balloon or kite, for aerial photography. It emails small previews of photos and the latitude and longitude to the given email address, while in flight. " +
-	  		"Be sure to share your work with the rest of the Public Lab community at PublicLab.org!")
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		  .setNeutralButton("OK", new DialogInterface.OnClickListener(){
 			  
 			  @Override
@@ -173,7 +154,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	
 	}
 	
-<<<<<<< HEAD
 	private void forceShowOverFlowMenu() {
 		// TODO Auto-generated method stub
 		 try {
@@ -189,8 +169,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
          }
 	}
 
-=======
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 	//AutoFocusCallback --> Callback interface used to notify on completion of camera auto focus.
 	AutoFocusCallback myAutoFocusCallback = new AutoFocusCallback(){
 		 @Override
@@ -246,11 +224,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	
 	// ***
 	public boolean minacc(LinkedList<Float> b){
-<<<<<<< HEAD
 		Log.i("MinAcceleration", " Size = "+ accdata.size());
-=======
-		Log.i("minacc", " Size = "+ accdata.size());
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		float f1 = finndmax(b)- threshold; 
 		if((finndmax(b) < threshold) || f1 <= 0.05){
 			b.removeAll(b);
@@ -259,10 +233,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		else 
 			b.removeAll(b);
 			return minacc1 = false;
-<<<<<<< HEAD
-=======
-		
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 	}
 	
 	
@@ -349,11 +319,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
         return k;
  }
 	
-<<<<<<< HEAD
 	//BEGIN:: ActionBar Menu items and actions
-=======
-	
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.main, menu);
@@ -380,22 +346,16 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	        case R.id.about:
 	        	aboutMenuItem();
 	        	break;
-<<<<<<< HEAD
 	        	
 	        case R.id.guide:
 	        	startActivity(new Intent(this, Guide.class));
-=======
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 	          
 		}
 	    return true;
 	}
 	
-<<<<<<< HEAD
 	//END:: ActionBar Menu items and actions
 	
-=======
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 	
 	private void aboutMenuItem(){
 		 new AlertDialog.Builder(this)
@@ -586,12 +546,8 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 	
    public class SendEmailAsyncTask extends AsyncTask<PicData, Void, String> {
 		
-<<<<<<< HEAD
 
 	   Mail m = new Mail("publabsgsoc@gmail.com", "publiclabs2014!");
-=======
-		Mail m = new Mail("gsocpublabs@gmail.com", "publabs1234");
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 				
 		    
 		    @Override
@@ -605,7 +561,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 					String fileName = picData.getName();
 					String savefile = sdPath + fileName;
 		    	    String sendemail =picData.getemail();
-<<<<<<< HEAD
 		    	    
 		    	    Calendar c = Calendar.getInstance();
 		    	    String the_year = String.valueOf(c.get(Calendar.YEAR));
@@ -625,16 +580,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		        				"\nYou can now upload your photos to http://mapknitter.org to turn your photos into a map." +
 		        				"\nBe sure to share your work with the rest of the Public Lab community at http://publiclab.org/post ");	
 		      	    	
-=======
-		    	
-		    	String[] toArr = {""+sendemail}; 
-		        m.setTo(toArr); 
-		        m.setFrom("gsocpublabs@gmail.com"); 
-		        m.setSubject("GSoC 2013 Email"); 
-		        m.setBody("Latitude: " + picData.getlats() + " Longitude " + picData.getlons() );	
-		    	
-
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		        try { 
 		           
 		        	m.addAttachment(""+sdPath1); 
@@ -644,11 +589,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		        	  {
 		        	     public void run() 
 		        	     {
-<<<<<<< HEAD
 		        	    	 Toast.makeText(MainActivity.this, "SkyCam says: Email was sent successfully.", Toast.LENGTH_LONG).show();    
-=======
-		        	    	 Toast.makeText(MainActivity.this, "Email was sent successfully.", Toast.LENGTH_LONG).show();    
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		        	     }
 		        	  }); 
 		        	  
@@ -658,11 +599,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		        	  {
 		        	     public void run() 
 		        	     {
-<<<<<<< HEAD
 		        	    	 Toast.makeText(MainActivity.this, "SkyCam says: Email was not sent.", Toast.LENGTH_LONG).show();    
-=======
-		        	    	 Toast.makeText(MainActivity.this, "Email was not sent.", Toast.LENGTH_LONG).show();    
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		        	     }
 		        	  }); 
 		        	  
@@ -673,17 +610,9 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 		        	  {
 		        	     public void run() 
 		        	     {
-<<<<<<< HEAD
 		        	    	 Toast.makeText(MainActivity.this, "SkyCam says: There was a problem sending the email.", Toast.LENGTH_LONG).show();    
 		        	     }
 		        	  }); 
-=======
-		        	    	 Toast.makeText(MainActivity.this, "There was a problem sending the email.", Toast.LENGTH_LONG).show();    
-		        	     }
-		        	  }); 
-		        	  
-		        	
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 		        	 
 		         // Log.e("Mail", "Could not send email", e); 
 		        } 
@@ -720,11 +649,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 			timeUpdateHandler.removeCallbacks(timeUpdateTask);
 			new AlertDialog.Builder(this)
 			  .setTitle("Make a map")
-<<<<<<< HEAD
 			  .setMessage("Your photos have been saved in your SD card in the folder 'SkyCamFolder'\n\nNow you can upload your photos to MapKnitter.org to turn your photos into a map (see 'Guide' on the menu).\n\nBe sure to share your work with the rest of the Public Lab community at PublicLab.org!(see 'Guide' on the menu)")
-=======
-			  .setMessage("Now you can upload your photos (stored in the SD card in the Sky Cam folder) to MapKnitter.org to turn your photos into a map.  Be sure to share your work with the rest of the Public Lab community at PublicLab.org!")
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 			  .setNeutralButton("OK", new DialogInterface.OnClickListener(){
 				  
 				  @Override
@@ -738,17 +663,10 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 
 	private Runnable timeUpdateTask = new Runnable() {
 		public void run() {
-<<<<<<< HEAD
 			if (currTime < Time_Period) { //time to take photo not reached..
 				if(currTime == Time_Period - 1){
 			        count = 0;
 			        Log.i("Timer_Time: currTime == Time_Period - 1", "Entered into last second");
-=======
-			if (currTime < Time_Period) {
-				if(currTime == Time_Period - 1){
-			        count = 0;
-			        Log.i("patil", "Entered into last second");
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 			        gatherdata();
 		        //	Log.i("Mohit1", " Size = "+ accdata.size() +" "+ findmax(values) +" "+count);
 					currTime++;
@@ -757,11 +675,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 				}else if(currTime == 1 && firstshot == true){
 					//Log.i("Neetu", "Count = " +count);
 					count = 0;
-<<<<<<< HEAD
 					Log.i("Timer_Time: currTime == 1 && firstshot == true", "Entered into first second");
-=======
-					Log.i("vaibhav", "Entered into first second");
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 					gatherdata();
 					currTime++;
 					timeUpdateHandler.postDelayed(timeUpdateTask, 1000);
@@ -769,7 +683,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 				}else if(currTime == 2 && firstshot == true){
 					 minacc(accdata);
 					 Log.i("ALS", "ACCleration = " +minacc1);
-<<<<<<< HEAD
 					 if(!(minacc1)){ //if minimum acceleration = false
 						 File file = new File(Environment.getExternalStorageDirectory().getPath() + "/SkyCamFolder/" +photoFile);
 						 boolean deleted = file.delete();
@@ -777,14 +690,6 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 					 }
 					 else{ //if minimum acceleration = true
 						 Log.i("if minimum acceleration = true && At currTime == 2 && firstshot == true", "SendEmailAsyncTask()).execute(picnew) called");
-=======
-					 if(!(minacc1)){
-						 File file = new File(Environment.getExternalStorageDirectory().getPath() + "/SkyCamFolder/" +photoFile);
-						 boolean deleted = file.delete();
-						 Log.i("rahul meena", "File Deleted: "+deleted + " "+Environment.getExternalStorageDirectory().getPath() + "/SkyCamFolder/" +photoFile);
-					 }
-					 else{
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 						 (new SendEmailAsyncTask()).execute(picnew); 
 					 }
 					 currTime++;
@@ -798,11 +703,7 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
 					countdownTextView.setText("" + currTime);
 				}
 				
-<<<<<<< HEAD
 			} else { //time to take photo  reached!!
-=======
-			} else {
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 				count = 0;
 				Log.i("patty", "Entered into camera second");
 				gatherdata();

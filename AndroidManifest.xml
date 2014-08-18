@@ -7,7 +7,6 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
-<<<<<<< HEAD
 
     <uses-permission android:name="android.permission.CAMERA" >
     </uses-permission>
@@ -19,32 +18,16 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-=======
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-	<uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-    
-    
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-<<<<<<< HEAD
         android:theme="@style/Theme.Skycam" >
-=======
-        android:theme="@style/AppTheme1" >
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
         <activity
             android:name="com.publabs.skycam.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -67,19 +50,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.publabs.skycam.MainActivity" />
         </activity>
-=======
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        <activity
-                 android:name=".PrefsActivity"
-                 android:label="@string/action_settings"
-                 android:theme="@style/AppTheme1" >
-        </activity>
-        <service android:name="com.publabs.skycam.GPSTracker" />
->>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
     </application>
 
 </manifest>

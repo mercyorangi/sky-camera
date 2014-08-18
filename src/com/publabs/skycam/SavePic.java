@@ -11,6 +11,7 @@ import android.os.AsyncTask;
 import android.os.Environment;
 import java.io.OutputStream;
 
+<<<<<<< HEAD
 public class SavePic extends AsyncTask<PicData, Void, String> {
 	
 //<<<<<<< HEAD
@@ -18,6 +19,15 @@ public class SavePic extends AsyncTask<PicData, Void, String> {
 //	
 //=======
 //>>>>>>> 055abaaa8e8e00e795e852a2352646f67df9b86c
+=======
+
+
+
+public class SavePic extends AsyncTask<PicData, Void, String> {
+    
+	
+	
+>>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 	protected String doInBackground(PicData... params)
 	{
 		if(params != null && params.length > 0)
@@ -29,7 +39,11 @@ public class SavePic extends AsyncTask<PicData, Void, String> {
 			File savebit=new File(sdPath);
 			
 			if (!saveDir.exists())
+<<<<<<< HEAD
 			saveDir.mkdirs();
+=======
+				saveDir.mkdirs();
+>>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 			
 			String fileName = picData.getName();
 			String savefile = sdPath + fileName;
@@ -39,6 +53,7 @@ public class SavePic extends AsyncTask<PicData, Void, String> {
 			
             
 			
+<<<<<<< HEAD
 			try{
 				fos = new FileOutputStream(savefile);
 				fos.write(data);
@@ -46,6 +61,20 @@ public class SavePic extends AsyncTask<PicData, Void, String> {
 			} catch(FileNotFoundException e){
 				e.printStackTrace();
 			} catch(IOException e){
+=======
+			try
+			{
+				fos = new FileOutputStream(savefile);
+				fos.write(data);
+			    fos.close();
+}
+			catch(FileNotFoundException e)
+			{
+				e.printStackTrace();
+			}
+			catch(IOException e)
+			{
+>>>>>>> b6938a79a632e370ebfe64c9484f88882a2c5b56
 				e.printStackTrace();
 			}
 			
